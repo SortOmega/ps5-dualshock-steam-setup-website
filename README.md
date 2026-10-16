@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Steam Input Setup for Linux — Landing Page
 
-## Getting Started
+Official landing page for **Steam Input Setup for Linux**, a small open-source
+application that helps fix PS5 DualSense controller compatibility with Steam
+games on Linux.
 
-First, run the development server:
+The page introduces the application, explains how it works, and provides a
+direct link to download the latest available release. It includes English and
+Spanish language support, with English as the default language.
+
+## Author
+
+Developed by **SortOmega**.
+
+- Profile: <https://github.com/SortOmega>
+
+## Technology
+
+The landing page is built with:
+
+- [Next.js](https://nextjs.org/) 16
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [Vercel](https://vercel.com/) as the deployment platform
+
+## Application
+
+### Repository
+
+<https://github.com/SortOmega/ps5_dualshok_steam_setup>
+
+### Current release
+
+- Releases page:
+  <https://github.com/SortOmega/ps5_dualshok_steam_setup/releases>
+- Release `v1.0.0`:
+  <https://github.com/SortOmega/ps5_dualshok_steam_setup/releases/tag/v1.0.0>
+- Direct download of the Linux x86_64 AppImage:
+  <https://github.com/SortOmega/ps5_dualshok_steam_setup/releases/download/v1.0.0/PS5_Steam_Input_Setup_for_Linux-x86_64.AppImage>
+
+## Local development
+
+Install the dependencies using the project lockfile:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install --frozen-lockfile
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+To create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project includes [vercel.json](./vercel.json) with the deployment
+configuration. Vercel detects the project as a Next.js application and uses
+`pnpm install --frozen-lockfile` followed by `pnpm build`.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The **Steam Input Setup for Linux** application is distributed under the
+[GNU General Public License v2.0 (GPL-2.0)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Refer to the application repository for the complete license text and its
+terms of use, modification, and distribution.
