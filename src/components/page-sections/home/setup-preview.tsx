@@ -1,4 +1,5 @@
-import { CheckIcon, ControllerIcon } from "@/src/components/icons";
+import Image from "next/image";
+import { CheckIcon } from "@/src/components/icons";
 import { translations, type Language } from "@/src/i18n/translations";
 
 export function SetupPreview({ language }: { language: Language }) {
@@ -12,7 +13,13 @@ export function SetupPreview({ language }: { language: Language }) {
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#29234C] text-[#A98CFF]">
-                <ControllerIcon />
+                <Image
+                  alt=""
+                  className="h-7 w-7"
+                  height={128}
+                  src="/ps5-steam-input-setup.png"
+                  width={128}
+                />
               </span>
               <div>
                 <p className="text-sm font-bold text-white">{t.heroLabel}</p>
@@ -23,7 +30,15 @@ export function SetupPreview({ language }: { language: Language }) {
           </div>
           <div className="mt-5 rounded-2xl bg-[#191827] p-4">
             <div className="mb-4 flex items-center gap-3">
-              <span className="text-[#60E8B1]"><ControllerIcon /></span>
+              <span className="text-[#60E8B1]">
+                <Image
+                  alt=""
+                  className="h-7 w-7"
+                  height={128}
+                  src="/ps5-steam-input-setup.png"
+                  width={128}
+                />
+              </span>
               <div>
                 <p className="text-sm font-semibold text-[#F4F1FF]">Steam</p>
                 <p className="text-xs text-[#777288]">{t.compatibility}</p>

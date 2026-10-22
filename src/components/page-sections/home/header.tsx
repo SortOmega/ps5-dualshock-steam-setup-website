@@ -1,4 +1,4 @@
-import { ControllerIcon } from "@/src/components/icons";
+import Image from "next/image";
 import { repositoryUrl, releaseUrl } from "@/src/constants/links";
 import { translations, type Language } from "@/src/i18n/translations";
 
@@ -43,7 +43,13 @@ export function Header({
     <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 lg:px-8">
       <a aria-label="Steam Input Setup" className="flex items-center gap-3" href="#top">
         <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#A98CFF] text-[#151322] shadow-[0_0_28px_rgba(169,140,255,0.35)]">
-          <ControllerIcon />
+          <Image
+            alt="Steam Input Setup"
+            className="h-7 w-7"
+            height={128}
+            src="/ps5-steam-input-setup.png"
+            width={128}
+          />
         </span>
         <span className="text-sm font-bold tracking-[-0.02em] text-white">
           Steam Input Setup
