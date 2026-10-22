@@ -13,9 +13,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steam Input Setup for Linux | DualSense compatibility",
+  title: "PS5 DualSense on Linux | Steam Input Setup",
   description:
-    "Configure your PS5 DualSense for Steam games on Linux with one simple open-source utility.",
+    "Set up your PS5 DualSense controller for Steam games on Linux. Install the right udev rules with a simple, open-source utility and start playing.",
+  applicationName: "Steam Input Setup",
+  keywords: [
+    "PS5 DualSense Linux",
+    "DualSense Steam Linux",
+    "Steam Input Linux",
+    "DualSense udev rules",
+    "PS5 controller Linux",
+    "Linux gaming",
+  ],
+  authors: [{ name: "SortOmega" }],
+  creator: "SortOmega",
+  publisher: "SortOmega",
+  category: "technology",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Steam Input Setup",
+    title: "PS5 DualSense on Linux | Steam Input Setup",
+    description:
+      "Set up your PS5 DualSense controller for Steam games on Linux with a simple, open-source utility.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "PS5 DualSense on Linux | Steam Input Setup",
+    description:
+      "Set up your PS5 DualSense controller for Steam games on Linux with a simple, open-source utility.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
